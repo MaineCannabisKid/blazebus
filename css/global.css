@@ -1,0 +1,42 @@
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	background: black;
+	color: white;
+	padding-top: 50px;
+}
+
+
+/* Navbar */
+
+/* Brand / Title */
+.navbar-brand {
+	font-weight: 700;
+}
+
+/* Alerts */
+.alert {
+	opacity: 0.8;
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	transition: all 0.25s ease-out;
+}
+.alert:hover {
+	opacity: 1;
+}
+
+@media screen and (max-width: 1174px) {
+	.alert {
+		width: 40%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.alert {
+		z-index: 2;
+	}
+}

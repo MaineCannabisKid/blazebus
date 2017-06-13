@@ -1,0 +1,37 @@
+body {
+	padding-top: 1%;
+	padding-bottom: 2.5%;
+}
+
+/*	Panel */
+.panel-default {
+	background: #99AAB5;
+	width: 80%;
+	margin: 2.5% auto;
+	border: 2px solid #2C2F33;
+	border-radius: 10px;
+}
+.panel-default>.panel-heading {
+	border-radius: 10px 10px 0 0;
+	background: #7289DA;
+	border: none;
+	color: white;
+	font-weight: 700;
+	font-size: 1.4rem;
+	letter-spacing: 2px;
+}
+
+/*	Blockquote */
+blockquote {
+	width: 60%;
+	margin: 0 auto;
+}
+.blockquote-danger {
+	border-color: #d9534f;
+}
+
+/* Hashtags */
+.hashtag, .hashtag:hover, .hashtag:active, .hashtag:visited {
+	color: #7289DA;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}

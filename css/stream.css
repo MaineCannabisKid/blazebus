@@ -1,0 +1,90 @@
+/* Stream */
+iframe[src='https://www.youtube.com/embed/live_stream?channel=UCMkBFD0YPtrcoB_tni5uOLQ&autoplay=true&controls=0&enablejsapi=1&rel=0'],
+iframe[src='https://www.youtube.com/embed/live_stream?channel=UCMkBFD0YPtrcoB_tni5uOLQ&autoplay=false&controls=0&enablejsapi=1&rel=0'] {
+	border: none;
+	min-height: 100%;
+	min-width: 768px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+
+@media screen and (max-width: 768px) {
+  iframe[src='https://www.youtube.com/embed/live_stream?channel=UCMkBFD0YPtrcoB_tni5uOLQ&autoplay=true&controls=0&enablejsapi=1&rel=0'],
+  iframe[src='https://www.youtube.com/embed/live_stream?channel=UCMkBFD0YPtrcoB_tni5uOLQ&autoplay=false&controls=0&enablejsapi=1&rel=0'] {
+  	min-width: 100%;
+  	min-height: 50%;
+  	width: 100vw;
+  	height: 60vh;
+  	/*position: static;*/
+  	margin-top: 50px;
+  	z-index: -2;
+  }
+}
+
+/* Video Blocking Div */
+/* Users can No Longer Pause if Enabled */
+#video-block {
+	/*background: rgba(255,0,0,0.7);*/
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  #video-block {
+  	/*background: red;*/
+  	width: 100%;
+	height: 70vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+  }
+}
+
+/* Flag Counter */
+.flag-counter {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.flag-counter img {
+	opacity: 0.3;
+	transition: all 0.5s ease-out;
+}
+.flag-counter img:hover {
+	opacity: 1;
+}
+
+/* Youtube Subscribe */
+#subscribe-wrapper {
+	position: fixed;
+	top: 55px;
+	left: 0;
+	opacity: 0.5;
+	transition: all 0.5s ease-out;
+}
+#subscribe-wrapper:hover {
+	opacity: 1;
+}
+@media screen and (max-width: 768px) {
+	#subscribe-wrapper {
+		top: initial;
+		bottom: 15%;
+		left: 50%;
+		margin-left: -114px;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.flag-counter {
+		display: none;
+	}
+}

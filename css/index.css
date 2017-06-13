@@ -1,0 +1,208 @@
+/* Jumbotron */
+.jumbotron {
+	background: rgba(0,0,0,0.7);
+	height: auto;
+	padding: 20px 10px;
+}
+.jumbotron h1 {
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+.jumbotron p {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+/* Welcome Pop-Up Module */
+#welcome {
+	/* Hide on Page Load */
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	#welcome {
+		height: 60%;
+		padding-top: 20%;
+		position: absolute;
+		top: 10%;
+		left: 0;
+	}
+}
+
+/* Discord Pop-Up Module */
+#discord {
+	text-align: center;
+	/* Hide on Page Load */
+	display: none;
+}
+/* Discord Image */
+#discord img {
+	width: 30%;
+}
+/* Discord Button*/
+#discord button {
+	width: 20%;
+	height: 50px;
+	font-size: 1.1rem;
+	padding: 0 0;
+	letter-spacing: 3px;
+	background: #7289DA;
+	border-radius: 10px;
+	border: 2px solid #2C2F33;
+	transition: all 0.12s ease-out;
+	margin-bottom: 10px;
+}
+#discord button:hover {
+	transform: translate3d(0px, -1px, 0px);
+	box-shadow: rgba(0,0,0,0.4) 0px 4px 14px 0px;
+}
+/* Button Text Color */
+#button-link {
+	color: white;
+}
+/* Link Under Button & Paragraph */
+#invite, #discord p {
+	width: 50%;
+	margin: 1.5% auto;
+	font-size: .9rem;
+}
+
+@media screen and (max-width: 768px) {
+	#discord {
+		padding-top: 10%;
+		position: absolute;
+		top: 10%;
+		left: 0;
+	}
+	#discord button {
+		width: 40%;
+		height: 60px;
+	}
+	#discord img {
+		width: 60%;
+	}
+}
+
+/* Past Donations */
+#past-donations {
+	width: 60%;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	border-radius: 0 0 10px 10px;
+	/* Hide on Page Load */
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	#past-donations {
+		width: 100%;
+		height: 60%;
+		padding-top: 20%;
+		position: absolute;
+		top: 10%;
+		left: 0;
+	}
+	#past-donations h1 {
+		font-size: 2rem;
+	}
+	
+}
+
+/* Staff List */
+#staff {
+	background: rgba(0,0,0,0.5);
+	width: 80%;
+	padding: 2.5% 0;
+	border-radius: 0 0 10px 10px;
+	margin-bottom: 20px;
+	/* Hide on Page Load */
+	display: none;
+	
+}
+
+#staff .row {
+	/*background: rgba(255,255,255,0.8);*/
+	text-align: center;
+	margin: 10px auto;
+}
+
+#staff img {
+	width: 125px;
+	height: 125px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+}
+
+#staff .name {
+	font-size: 1.2rem;
+}
+#staff .owner {
+	font-size: 1.5rem;
+}
+#staff .owner-img {
+	width: 250px;
+	height: 250px;
+}
+
+#staff h2 {
+	margin: 0;
+}
+
+#staff hr {
+	border: 0;
+    height: 2px;
+    margin: 10px auto 20px;
+    width: 80%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+@media screen and (max-width: 768px) {
+	#staff {
+		width: 100%;
+		padding-top: 20%;
+		position: absolute;
+		top: 10%;
+		left: 0;
+	}
+  #staff img {
+  	width: 75px;
+  	height: 75px;
+  }
+  #staff .owner-img {
+  	width: 150px;
+  	height: 150px;
+  }
+  #staff h2 {
+  	font-size: 1.5rem;
+  }
+}
+
+
+
+
+/* Play & Pause Buttons */
+#action-btn-wrapper {
+	height: 30px;
+	font-size: 2rem;
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
+	display: none;
+}
+#action-btn-wrapper a {
+	color: rgba(255,255,255,0.6);
+	transition: all 0.35s ease-out;
+}
+#action-btn-wrapper a:hover {
+	color: rgba(255,255,255,1);
+}
+@media screen and (max-width: 841px) and (min-width: 768px) {
+	.navbar-right {
+		display: none;
+	}
+	#action-btn-wrapper {
+		display: initial;
+	}
+}
