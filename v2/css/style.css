@@ -230,3 +230,64 @@ a.pause:hover {
     margin-top: 60px;
     z-index: -999;
 }
+
+.overlay-with-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 !important;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    display: none;
+}
+
+.staff-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.staff-name {
+    color: #fff;
+    font-size: 15pt;
+}
+
+.staff-title {
+    color: #fff;
+    font-size: 20pt;
+}
+
+.staff-holder {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#staff-close-button {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    z-index: 99999 !important;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#staff-close-button:hover {
+    background: #5B5D5C;
+    color: #fff;
+}
