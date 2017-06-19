@@ -222,6 +222,10 @@ a.pause:hover {
     right: 0;
 }
 
+.social-icons {
+    margin-right: 10px;
+}
+
 #livestream {
     width: 100%;
     height: 100%;
